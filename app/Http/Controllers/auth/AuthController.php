@@ -68,7 +68,8 @@ class AuthController extends Controller
             'password' => 'required|min:8|confirmed', // 'confirmed' validates if 'password_confirmation' field matches 'password'
         ]);
 
-        $user = User::create($request->all());
+        $data = $request->all();
+        $user = $this->create($data);
             
         Auth::login($user); 
 

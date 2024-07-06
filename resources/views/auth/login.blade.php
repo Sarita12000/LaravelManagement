@@ -58,7 +58,7 @@
                         Keep me logged in
                       </label>
                     </div>
-                    <a href="#!" class="link-primary text-decoration-none">{{ __('forgot password?') }}</a>
+                    <a href="{{ route('password.request') }}" class="link-primary text-decoration-none">{{ __('forgot password?') }}</a>
                   </div>
                 </div>
                 <div class="col-12">
