@@ -32,13 +32,14 @@
       <div class="container-fluid py-5">
 
       @if (session('error'))
-    <div class="alert alert-danger" role="alert">
-        {{ session('error') }}
-    </div>
-@endif
+          <div class="alert alert-danger" role="alert">
+              {{ session('error') }}
+          </div>
+      @endif
 
         <h1 class="display-5 fw-bold">Hi, {{ auth()->user()->name }}</h1>
         <p class="col-md-8 fs-4">Welcome to dashboard.</p>
+        <a href="{{ route('posts.index') }}" class="btn btn-primary">Manage Posts</a>
       </div>
     </div>
 
