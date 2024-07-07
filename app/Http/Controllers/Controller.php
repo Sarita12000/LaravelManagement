@@ -10,11 +10,4 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
-    public function test_method(){
-        echo 'testing';
-    }
-
-    public function demo(){
-        echo "demo";
-    }
 }
