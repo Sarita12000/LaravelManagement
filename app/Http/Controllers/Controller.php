@@ -13,11 +13,8 @@ class Controller extends BaseController
     public function test_method(){
         echo 'testing';
     }
-<<<<<<< HEAD
 
     public function demo(){
         echo "demo";
     }
-=======
->>>>>>> testing
 }
